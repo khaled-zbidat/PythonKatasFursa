@@ -19,5 +19,4 @@ class TestIsUnique(unittest.TestCase):
     def test_single_character(self):
         self.assertTrue(is_unique("Z"))
 
-if __name__ == '__main__':
-    unittest.main()
+
