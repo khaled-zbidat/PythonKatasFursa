@@ -1,0 +1,23 @@
+import unittest
+from katas.is_unique_str import is_unique  
+
+class TestIsUnique(unittest.TestCase):
+
+    def test_with_duplicates(self):
+        self.assertFalse(is_unique("Hello"))
+
+    def test_unique_characters(self):
+        self.assertTrue(is_unique("World"))
+        self.assertTrue(is_unique("Python"))
+
+    def test_case_insensitivity(self):
+        self.assertFalse(is_unique("Aa"))  
+
+    def test_empty_string(self):
+        self.assertTrue(is_unique(""))
+
+    def test_single_character(self):
+        self.assertTrue(is_unique("Z"))
+
+if __name__ == '__main__':
+    unittest.main()
