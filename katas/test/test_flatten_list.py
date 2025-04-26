@@ -1,6 +1,6 @@
 
 import unittest
-from katas.list_flatten import   flat_list
+from katas.list_flatten import   flatten_list
 
 
 
